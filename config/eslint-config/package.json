@@ -1,0 +1,17 @@
+{
+  "name": "@isometric/eslint-config",
+  "version": "0.0.1",
+  "description": "Isometric ESLint Config",
+  "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "",
+    "test": ""
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "isometric"
+  ]
+}
