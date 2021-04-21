@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}

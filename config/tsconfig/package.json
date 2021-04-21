@@ -4,7 +4,7 @@
   "description": "Isometric TypeScript Config",
   "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
   "license": "MIT",
-  "main": "index.js",
+  "main": "base.json",
   "scripts": {
     "build": "",
     "test": ""
