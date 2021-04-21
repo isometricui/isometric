@@ -6,11 +6,14 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build": "",
+    "build": "esbuild src/index.ts --bundle --outfile=lib/index.js",
     "test": ""
   },
   "keywords": [
     "isometric",
     "build"
-  ]
+  ],
+  "dependencies": {
+    "esbuild": "~0.11.12"
+  }
 }
