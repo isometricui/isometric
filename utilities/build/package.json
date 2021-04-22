@@ -1,0 +1,19 @@
+{
+  "name": "@isometric/build",
+  "version": "0.0.1",
+  "description": "Isometric Component Build Tool",
+  "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=lib/index.js",
+    "test": ""
+  },
+  "keywords": [
+    "isometric",
+    "build"
+  ],
+  "dependencies": {
+    "esbuild": "~0.11.12"
+  }
+}

@@ -390,6 +390,11 @@
       "packageName": "@isometric/tsconfig",
       "projectFolder": "config/tsconfig",
       "reviewCategory": "config"
+    },
+    {
+      "packageName": "@isometric/build",
+      "projectFolder": "utilities/build",
+      "reviewCategory": "utility"
     }
     // {
     //   /**
