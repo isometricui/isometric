@@ -387,6 +387,11 @@
    */
   "projects": [
     {
+      "packageName": "@isometric/eslint-config",
+      "projectFolder": "config/eslint-config",
+      "reviewCategory": "config"
+    },
+    {
       "packageName": "@isometric/tsconfig",
       "projectFolder": "config/tsconfig",
       "reviewCategory": "config"
