@@ -11,7 +11,7 @@
   "gitPolicy": {},
 
   "repository": {
-    "url": "https://github.com/isometricui/new-isometric",
+    "url": "https://github.com/isometricui/isometric",
     "defaultBranch": "main"
   },
   "eventHooks": {
