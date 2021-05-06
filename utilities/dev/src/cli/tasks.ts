@@ -16,12 +16,12 @@ export class Tasks {
     await build();
     logger(`[build] Done. ${watch ? '(watch)' : ''}`);
   }
-  public static async CreateComponent(name: string, dryRun: boolean): Promise<void> {
-    createComponent({ name, dryRun });
+  public static async CreateComponent(name: string, run: boolean): Promise<void> {
+    createComponent({ name, run });
     logger(
-      `[create] Component(s) created${dryRun ? ' in .temp folder' : ''}: \n - ${name}`
+      `[create] Component(s) created${!run ? ' in .temp folder' : ''}: \n - ${name}`
     );
-    !dryRun && logger(`Run rush update to install dependencies.`);
+    run && logger(`Run rush update to install dependencies.`);
   }
   public static async Develop(): Promise<void> {
     develop();

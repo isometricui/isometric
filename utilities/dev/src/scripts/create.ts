@@ -1,7 +1,7 @@
 import * as fs from 'fs-extra';
 import * as path from 'path';
 
-function createComponent({ name, dryRun = false }: { name: string; dryRun: boolean }) {
+function createComponent({ name, run = false }: { name: string; run: boolean }) {
   const uppercasedName = name
     .split('-')
     .map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`);
@@ -69,7 +69,7 @@ function createComponent({ name, dryRun = false }: { name: string; dryRun: boole
     );
   });
 
-  if (!dryRun) {
+  if (run) {
     // Copy from temporary directory to target directory
     fs.copySync(paths.temporaryTarget, paths.target);
 

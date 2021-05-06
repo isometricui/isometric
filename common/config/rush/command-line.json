@@ -29,8 +29,8 @@
       "required": true
     },
     {
-      "longName": "--dry-run",
-      "description": "Create component in .temp folder",
+      "longName": "--run",
+      "description": "Create the component permanently",
       "parameterKind": "flag",
       "associatedCommands": ["create-new"]
     }
