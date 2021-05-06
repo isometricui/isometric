@@ -1,16 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-
   "rushVersion": "5.46.1",
   "pnpmVersion": "6.2.5",
-
   "pnpmOptions": {
     "useWorkspaces": false,
     "strictPeerDependencies": true
   },
   "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
   "gitPolicy": {},
-
   "repository": {
     "url": "https://github.com/isometricui/isometric",
     "defaultBranch": "main"
