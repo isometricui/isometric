@@ -8,9 +8,25 @@
       "safeForSimultaneousRushProcesses": true,
       "autoinstallerName": "rush-prettier",
       "shellCommand": "pretty-quick --staged"
+    },
+    {
+      "name": "create-new",
+      "commandKind": "global",
+      "summary": "Create a new component",
+      "safeForSimultaneousRushProcesses": true,
+      "shellCommand": "node ./utilities/dev/dist/index.js create"
     }
   ],
 
   "parameters": [
+    {
+      "argumentName": "NAME",
+      "longName": "--name",
+      "shortName": "-n",
+      "description": "Component name",
+      "parameterKind": "string",
+      "associatedCommands": ["create-new"],
+      "required": true,
+    }
   ]
 }
