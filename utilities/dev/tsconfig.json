@@ -1,0 +1,7 @@
+{
+  "extends": "@isometric/tsconfig/node",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
+}
