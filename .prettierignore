@@ -1,5 +1,5 @@
 # Rush files
-common/
+./common/
 common/changes/
 common/scripts/
 common/config/
