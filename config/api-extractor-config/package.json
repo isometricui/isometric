@@ -1,0 +1,17 @@
+{
+  "name": "@isometric/api-extractor-config",
+  "version": "0.0.1",
+  "description": "Isometric API-Extractor Config",
+  "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
+  "license": "MIT",
+  "main": "base.json",
+  "scripts": {
+    "build": "",
+    "test": ""
+  },
+  "keywords": [
+    "api-extractor",
+    "config",
+    "isometric"
+  ]
+}
