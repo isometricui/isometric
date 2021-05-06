@@ -1,11 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
 
-  "rushVersion": "5.45.4",
-  "pnpmVersion": "6.2.1",
+  "rushVersion": "5.46.1",
+  "pnpmVersion": "6.2.5",
 
   "pnpmOptions": {
-    "useWorkspaces": true
+    "useWorkspaces": false,
+    "strictPeerDependencies": true
   },
   "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
   "gitPolicy": {},
@@ -23,6 +24,11 @@
   "variants": [],
   "projects": [
     {
+      "packageName": "@isometric/api-extractor-config",
+      "projectFolder": "config/api-extractor-config",
+      "reviewCategory": "config"
+    },
+    {
       "packageName": "@isometric/eslint-config",
       "projectFolder": "config/eslint-config",
       "reviewCategory": "config"
@@ -33,8 +39,8 @@
       "reviewCategory": "config"
     },
     {
-      "packageName": "@isometric/build",
-      "projectFolder": "utilities/build",
+      "packageName": "@isometric/dev-utils",
+      "projectFolder": "utilities/dev",
       "reviewCategory": "utility"
     }
   ]
