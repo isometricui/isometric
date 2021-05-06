@@ -20,6 +20,7 @@ const options = {
     'postcss-import',
     'postcss-nesting',
     'postcss-mixins',
+    'fs-extra',
   ],
   target: ['node14'],
   logLevel: 'warning',

@@ -8,6 +8,7 @@ specifiers:
   '@rush-temp/tsconfig': file:./projects/tsconfig.tgz
   '@rushstack/ts-command-line': ~4.7.10
   '@types/eslint': ~7.2.10
+  '@types/fs-extra': ~9.0.11
   '@types/jest': ~26.0.23
   '@types/node': ~15.0.2
   '@typescript-eslint/eslint-plugin': ~4.22.1
@@ -15,6 +16,7 @@ specifiers:
   autoprefixer: ~10.2.5
   esbuild: ~0.11.18
   eslint-config-prettier: ~8.3.0
+  fs-extra: ~10.0.0
   jest: ~26.6.3
   jest-watch-select-projects: ~2.0.0
   jest-watch-typeahead: ~0.6.3
@@ -32,6 +34,7 @@ dependencies:
   '@rush-temp/tsconfig': file:projects/tsconfig.tgz
   '@rushstack/ts-command-line': 4.7.10
   '@types/eslint': 7.2.10
+  '@types/fs-extra': 9.0.11
   '@types/jest': 26.0.23
   '@types/node': 15.0.2
   '@typescript-eslint/eslint-plugin': 4.22.1_f93e23bf3b171fd42325eb5c2c6a672b
@@ -39,6 +42,7 @@ dependencies:
   autoprefixer: 10.2.5_postcss@8.2.14
   esbuild: 0.11.19
   eslint-config-prettier: 8.3.0
+  fs-extra: 10.0.0
   jest: 26.6.3
   jest-watch-select-projects: 2.0.0
   jest-watch-typeahead: 0.6.3_jest@26.6.3
@@ -730,6 +734,12 @@ packages:
 
   /@types/estree/0.0.47:
     resolution: {integrity: sha512-c5ciR06jK8u9BstrmJyO97m+klJrrhCf9u3rLu3DEAJBirxRqSCvDQoYKmxuYwQI5SZChAWu+tq9oVlGRuzPAg==}
+    dev: false
+
+  /@types/fs-extra/9.0.11:
+    resolution: {integrity: sha512-mZsifGG4QeQ7hlkhO56u7zt/ycBgGxSVsFI/6lGTU34VtwkiqrrSDgw0+ygs8kFGWcXnFQWMrzF2h7TtDFNixA==}
+    dependencies:
+      '@types/node': 15.0.2
     dev: false
 
   /@types/graceful-fs/4.1.5:
@@ -2051,6 +2061,15 @@ packages:
       map-cache: 0.2.2
     dev: false
 
+  /fs-extra/10.0.0:
+    resolution: {integrity: sha512-C5owb14u9eJwizKGdchcDUQeFtlSHHthBk8pbX9Vc1PFZrLombudjDnNns88aYslCyF6IY5SUw3Roz6xShcEIQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.6
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
+
   /fs-extra/7.0.1:
     resolution: {integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==}
     engines: {node: '>=6 <7 || >=8'}
@@ -3101,6 +3120,14 @@ packages:
 
   /jsonfile/4.0.0:
     resolution: {integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=}
+    optionalDependencies:
+      graceful-fs: 4.2.6
+    dev: false
+
+  /jsonfile/6.1.0:
+    resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==}
+    dependencies:
+      universalify: 2.0.0
     optionalDependencies:
       graceful-fs: 4.2.6
     dev: false
@@ -4442,6 +4469,11 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: false
 
+  /universalify/2.0.0:
+    resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}
+    engines: {node: '>= 10.0.0'}
+    dev: false
+
   /unset-value/1.0.0:
     resolution: {integrity: sha1-g3aHP30jNRef+x5vw6jtDfyKtVk=}
     engines: {node: '>=0.10.0'}
@@ -4677,13 +4709,14 @@ packages:
     dev: false
 
   file:projects/dev-utils.tgz:
-    resolution: {integrity: sha512-7/cQ+Ke2bEzCp+tXyVpa88J0CIInfm6IttG3g66CYLsSqDuc7WMvGjf+XKEkkF96JdsFiT9zcqCedjgQD9JriA==, tarball: file:projects/dev-utils.tgz}
+    resolution: {integrity: sha512-3czhqYXlTIZvV+BxK+ace6T8P4rxKsumhZzpLeYrSfqYBY9fyMT5NcvmCpWModYUHS3ya/QgoLn0+U/FFobhnQ==, tarball: file:projects/dev-utils.tgz}
     name: '@rush-temp/dev-utils'
     version: 0.0.0
     dependencies:
       '@microsoft/api-extractor': 7.15.1
       '@rushstack/ts-command-line': 4.7.10
       '@types/eslint': 7.2.10
+      '@types/fs-extra': 9.0.11
       '@types/jest': 26.0.23
       '@types/node': 15.0.2
       '@typescript-eslint/eslint-plugin': 4.22.1_f2cf9a191be19a59b06aad4f4e4a9af1
@@ -4692,6 +4725,7 @@ packages:
       esbuild: 0.11.19
       eslint: 7.25.0
       eslint-config-prettier: 8.3.0_eslint@7.25.0
+      fs-extra: 10.0.0
       jest: 26.6.3
       jest-watch-select-projects: 2.0.0
       jest-watch-typeahead: 0.6.3_jest@26.6.3

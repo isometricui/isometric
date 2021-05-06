@@ -16,18 +16,27 @@ export class Tasks {
     await build();
     logger(`[build] Done. ${watch ? '(watch)' : ''}`);
   }
-  public static async CreateComponent(names: readonly string[]): Promise<void> {
-    createComponent();
-    logger(`[create] Component(s) created: \n - ${names.join('\n - ')}`);
+  public static async CreateComponent(name: string, dryRun: boolean): Promise<void> {
+    createComponent({ name, dryRun });
+    logger(
+      `[create] Component(s) created${dryRun ? ' in .temp folder' : ''}: \n - ${name}`
+    );
+    !dryRun && logger(`Run rush update to install dependencies.`);
   }
   public static async Develop(): Promise<void> {
     develop();
     logger(`[develop] Watching...`);
   }
-  public static async Test(watch: boolean, debug: boolean, coverage: boolean): Promise<void> {
+  public static async Test(
+    watch: boolean,
+    debug: boolean,
+    coverage: boolean
+  ): Promise<void> {
     test({ watch, debug, coverage });
     logger(
-      `[test] Testing... ${watch ? '(watch)' : ''} ${debug ? '(debug)' : ''} ${coverage ? '(coverage)' : ''}`
+      `[test] Testing... ${watch ? '(watch)' : ''} ${debug ? '(debug)' : ''} ${
+        coverage ? '(coverage)' : ''
+      }`
     );
   }
   public static async Validate(fix: boolean): Promise<void> {

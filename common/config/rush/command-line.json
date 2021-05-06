@@ -26,7 +26,13 @@
       "description": "Component name",
       "parameterKind": "string",
       "associatedCommands": ["create-new"],
-      "required": true,
+      "required": true
+    },
+    {
+      "longName": "--dry-run",
+      "description": "Create component in .temp folder",
+      "parameterKind": "flag",
+      "associatedCommands": ["create-new"]
     }
   ]
 }
