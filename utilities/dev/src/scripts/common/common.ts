@@ -1,6 +1,7 @@
 import * as path from 'path';
 
 const paths = {
+  components: path.resolve(__dirname, '../../../components'),
   root: path.resolve(process.cwd()),
   output: path.resolve(process.cwd(), 'dist'),
   source: path.resolve(process.cwd(), 'src'),

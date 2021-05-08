@@ -2,7 +2,7 @@ import { CommandLineAction, CommandLineFlagParameter } from '@rushstack/ts-comma
 import { Tasks } from '../tasks';
 
 export class ValidateAction extends CommandLineAction {
-  private _fix: CommandLineFlagParameter;
+  private _fix!: CommandLineFlagParameter;
 
   public constructor() {
     super({

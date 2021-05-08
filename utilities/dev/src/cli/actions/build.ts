@@ -2,7 +2,7 @@ import { CommandLineAction, CommandLineFlagParameter } from '@rushstack/ts-comma
 import { Tasks } from '../tasks';
 
 export class BuildAction extends CommandLineAction {
-  private _watch: CommandLineFlagParameter;
+  private _watch!: CommandLineFlagParameter;
 
   public constructor() {
     super({

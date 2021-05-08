@@ -2,15 +2,16 @@ import { CommandLineAction, CommandLineFlagParameter } from '@rushstack/ts-comma
 import { Tasks } from '../tasks';
 
 export class TestAction extends CommandLineAction {
-  private _watch: CommandLineFlagParameter;
-  private _debug: CommandLineFlagParameter;
-  private _coverage: CommandLineFlagParameter;
+  private _watch!: CommandLineFlagParameter;
+  private _debug!: CommandLineFlagParameter;
+  private _coverage!: CommandLineFlagParameter;
 
   public constructor() {
     super({
       actionName: 'test',
       summary: 'Run the testing suite',
-      documentation: 'Test command can be used to test TypeScript source files of React components.',
+      documentation:
+        'Test command can be used to test TypeScript source files of React components.',
     });
   }
 

@@ -6,8 +6,8 @@ import {
 import { Tasks } from '../tasks';
 
 export class CreateAction extends CommandLineAction {
-  private _name: CommandLineStringParameter;
-  private _run: CommandLineFlagParameter;
+  private _name!: CommandLineStringParameter;
+  private _run!: CommandLineFlagParameter;
 
   public constructor() {
     super({
