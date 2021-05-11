@@ -21,7 +21,7 @@
     "dev-utils"
   ],
   "devDependencies": {
-    "@isometric/eslint-config": "~0.0.1",
+    "@isometric/eslint-config": "~0.1.0",
     "@isometric/tsconfig": "~0.1.1",
     "@microsoft/api-extractor": "~7.15.1",
     "@rushstack/ts-command-line": "~4.7.10",

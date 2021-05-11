@@ -1,0 +1,17 @@
+{
+  "name": "@isometric/eslint-config",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "tag": "@isometric/eslint-config_v0.1.0",
+      "date": "Tue, 11 May 2021 17:27:56 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "ESLint config with base, react and node profiles"
+          }
+        ]
+      }
+    }
+  ]
+}

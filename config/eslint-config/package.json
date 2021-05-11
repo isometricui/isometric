@@ -1,6 +1,6 @@
 {
   "name": "@isometric/eslint-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Isometric ESLint Config",
   "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
   "license": "MIT",
