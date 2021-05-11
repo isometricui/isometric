@@ -26,7 +26,8 @@
     },
     {
       "packageName": "@isometric/eslint-config",
-      "projectFolder": "config/eslint-config"
+      "projectFolder": "config/eslint-config",
+      "shouldPublish": true
     },
     {
       "packageName": "@isometric/tsconfig",

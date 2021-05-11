@@ -4731,9 +4731,13 @@ packages:
     dev: false
 
   file:projects/eslint-config.tgz:
-    resolution: {integrity: sha512-lVwnVy3jh/FSUiRjkJeyMAVgOwCQhYf2JH1YMels1w+clBP2DYXdDOAXmcHhpH1Qb0x8rtiqEq029yQhFBM+uA==, tarball: file:projects/eslint-config.tgz}
+    resolution: {integrity: sha512-xOx4jx63cAKDzxgUJXiThFhwQ7IDS/EUR2RYgAo5pNlSLjMVLkaqw+T0vas3qIq8n9mDEbY4mdYH1Px4Pl92cQ==, tarball: file:projects/eslint-config.tgz}
     name: '@rush-temp/eslint-config'
     version: 0.0.0
+    dependencies:
+      eslint: 7.26.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   file:projects/tsconfig.tgz:
