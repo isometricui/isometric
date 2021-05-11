@@ -15,6 +15,14 @@
       "summary": "Create a new component",
       "safeForSimultaneousRushProcesses": true,
       "shellCommand": "node ./utilities/dev/dist/index.js create"
+    },
+    {
+      "name": "build:watch",
+      "commandKind": "bulk",
+      "summary": "Build projects in watch mode",
+      "incremental": true,
+      "enableParallelism": true,
+      "watchForChanges": true
     }
   ],
 
