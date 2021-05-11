@@ -1,0 +1,4 @@
+{
+  "extends": "@isometric/tsconfig/react",
+  "include": ["src/**/*", "node_modules/@isometric/tsconfig/types/**/*"]
+}
