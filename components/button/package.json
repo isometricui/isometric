@@ -1,0 +1,54 @@
+{
+  "name": "@isometric/button",
+  "version": "0.0.1",
+  "description": "Isometric UI - Button Component",
+  "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "isometric-dev-utils build",
+    "build:watch": "isometric-dev-utils develop",
+    "start": "isometric-dev-utils develop",
+    "test": "isometric-dev-utils test",
+    "test:watch": "isometric-dev-utils test --watch",
+    "test:coverage": "isometric-dev-utils test --coverage",
+    "test:coverage:watch": "isometric-dev-utils test --coverage --watch",
+    "test:debug": "node --inspect-brk node_modules/@isometric/dev-utils/dist/index.js test --debug",
+    "validate": "isometric-dev-utils validate"
+  },
+  "keywords": [
+    "button",
+    "button",
+    "component",
+    "isometric",
+    "ui",
+    "react"
+  ],
+  "devDependencies": {
+    "@isometric/api-extractor-config": "~0.0.1",
+    "@isometric/dev-utils": "~0.0.1",
+    "@isometric/eslint-config": "~0.0.1",
+    "@isometric/tsconfig": "~0.1.1",
+    "@testing-library/jest-dom": "~5.12.0",
+    "@testing-library/react": "~11.2.6",
+    "@types/react": "~17.0.4",
+    "@types/testing-library__jest-dom": "~5.9.5",
+    "@typescript-eslint/eslint-plugin": "~4.22.1",
+    "@typescript-eslint/parser": "~4.22.1",
+    "eslint": "~7.26.0",
+    "eslint-config-prettier": "~8.3.0",
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2",
+    "ts-jest": "~26.5.6",
+    "typescript": "~4.2.4"
+  },
+  "peerDependencies": {
+    "react": "~17.0.2",
+    "react-dom": "~17.0.2"
+  }
+}
