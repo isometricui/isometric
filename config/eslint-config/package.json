@@ -4,7 +4,15 @@
   "description": "Isometric ESLint Config",
   "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
   "license": "MIT",
+  "homepage": "https://github.com/isometricui/isometric",
+  "repository": {
+    "url": "https://github.com/isometricui/isometric/tree/main/config/eslint-config"
+  },
   "main": "index.js",
+  "files": [
+    "*.js",
+    "types"
+  ],
   "scripts": {
     "build": "",
     "build:watch": "",
