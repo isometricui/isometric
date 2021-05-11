@@ -22,8 +22,5 @@
     "eslint",
     "config",
     "isometric"
-  ],
-  "peerDependencies": {
-    "eslint": ">=7.0.0"
-  }
+  ]
 }
