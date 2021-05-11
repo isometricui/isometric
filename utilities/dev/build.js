@@ -2,25 +2,28 @@ const esbuild = require('esbuild');
 const fs = require('fs');
 const path = require('path');
 
+const watch = process.argv[2] === '--watch' ? true : false;
+
 const options = {
   entryPoints: ['src/index.ts'],
   outfile: 'dist/index.js',
   platform: 'node',
   minify: true,
   bundle: true,
+  watch,
   external: [
+    '@microsoft/api-extractor',
+    '@rushstack/ts-command-line',
+    'autoprefixer',
     'esbuild',
     'eslint',
-    'typescript',
-    '@rushstack/ts-command-line',
-    '@microsoft/api-extractor',
+    'fs-extra',
     'jest',
     'postcss',
-    'autoprefixer',
     'postcss-import',
-    'postcss-nesting',
     'postcss-mixins',
-    'fs-extra',
+    'postcss-nesting',
+    'typescript',
   ],
   target: ['node14'],
   logLevel: 'warning',

@@ -1,4 +1,4 @@
-import { paths } from '../scripts/common/common';
+import { paths } from '../common/common';
 import { logger } from './logger';
 
 async function checkParent({

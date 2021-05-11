@@ -1,10 +1,10 @@
-import { build } from '../scripts/build';
-import { createComponent } from '../scripts/create';
-import { validate } from '../scripts/validate';
-import { test } from '../scripts/test';
-import { develop } from '../scripts/develop';
-import { logger } from '../utils/logger';
-import { checkCwdInComponents } from '../utils/path';
+import { build } from './tasks/build';
+import { createComponent } from './tasks/create';
+import { validate } from './tasks/validate';
+import { test } from './tasks/test';
+import { develop } from './tasks/develop';
+import { logger } from './utils/logger';
+import { checkCwdInComponents } from './utils/path';
 
 export class Tasks {
   public static async Build(watch: boolean): Promise<void> {

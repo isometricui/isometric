@@ -1,4 +1,4 @@
-import { lint } from './common/eslint';
+import { lint } from '../common/eslint';
 
 async function validate(fix: boolean) {
   await lint({ fix });

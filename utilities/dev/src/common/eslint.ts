@@ -1,6 +1,6 @@
 import { ESLint } from 'eslint';
 import * as path from 'path';
-import { logger } from '../../utils/logger';
+import { logger } from '../utils/logger';
 
 async function lint({ fix = false }) {
   const eslint = new ESLint({

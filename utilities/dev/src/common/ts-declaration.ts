@@ -1,6 +1,12 @@
 import * as ts from 'typescript';
 
-function compile({ files, options }: { files: string[]; options: ts.CompilerOptions }): void {
+function compile({
+  files,
+  options,
+}: {
+  files: string[];
+  options: ts.CompilerOptions;
+}): void {
   ts.createProgram(files, options).emit();
 }
 

@@ -1,5 +1,5 @@
 import * as jest from 'jest';
-import { config } from '../../config/jest';
+import { config } from '../config/jest';
 
 function runTests({ watch = false, debug = false, coverage = false }) {
   const projectRootPath = process.cwd();

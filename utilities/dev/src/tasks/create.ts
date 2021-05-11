@@ -7,13 +7,14 @@ function createComponent({ name, run = false }: { name: string; run: boolean }) 
     .map((word) => `${word.charAt(0).toUpperCase()}${word.slice(1)}`);
   const capitalizedName = uppercasedName.join('');
   const presentationalName = uppercasedName.join(' ');
+  const packageName = name;
 
   const paths = {
     rushRoot: path.resolve(__dirname, '../../../'),
-    template: path.resolve(__dirname, '../src/templates/component'),
+    template: path.resolve(__dirname, `../src/templates/react`),
     temporary: path.resolve(__dirname, '../../../components/.temp'),
-    temporaryTarget: path.resolve(__dirname, '../../../components/.temp', name),
-    target: path.resolve(__dirname, '../../../components', name),
+    temporaryTarget: path.resolve(__dirname, '../../../components/.temp', packageName),
+    target: path.resolve(__dirname, '../../../components', packageName),
   };
 
   const namedFiles = [
@@ -45,6 +46,7 @@ function createComponent({ name, run = false }: { name: string; run: boolean }) 
       }
     );
     const replacedContents = contents
+      .replace(/PACKAGE_NAME/g, packageName)
       .replace(/PRESENTATIONAL_NAME/g, presentationalName)
       .replace(/CAPITAL_NAME/g, capitalizedName)
       .replace(/DASHED_NAME/g, name);
@@ -76,8 +78,8 @@ function createComponent({ name, run = false }: { name: string; run: boolean }) 
     // Add new package entry in rush.json
     const rushJson = fs.readJSONSync(path.resolve(paths.rushRoot, 'rush.json'));
     const newPackage = {
-      packageName: `@isometric/${name}`,
-      projectFolder: `components/${name}`,
+      packageName: `@isometric/${packageName}`,
+      projectFolder: `components/${packageName}`,
       reviewCategory: 'component',
     };
     const updatedRushJson = { ...rushJson, projects: [...rushJson.projects, newPackage] };

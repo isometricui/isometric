@@ -1,11 +1,11 @@
 import * as esbuild from 'esbuild';
 import * as path from 'path';
 import * as fs from 'fs-extra';
-import { apiExtractor } from './common/api-extractor';
-import { paths } from './common/common';
-import { buildCss } from './common/postcss';
-import { generateTsDeclaration } from './common/ts-declaration';
-import { buildTargets, minifyCss } from './common/esbuild';
+import { apiExtractor } from '../common/api-extractor';
+import { paths } from '../common/common';
+import { buildCss } from '../common/postcss';
+import { generateTsDeclaration } from '../common/ts-declaration';
+import { buildTargets, minifyCss } from '../common/esbuild';
 
 const options: esbuild.BuildOptions = {
   entryPoints: ['src/index.ts'],
@@ -33,10 +33,11 @@ async function build() {
   buildTargets({ targets, options });
   generateTsDeclaration({ entry: paths.entryFile, output: 'dist/dts' });
   apiExtractor();
-  fs.emptyDirSync(path.resolve(paths.output, 'dts'));
+  fs.rmdirSync(path.resolve(paths.output, 'dts'), { recursive: true });
   await buildCss({
     entryFile: paths.stylesEntryFile,
     outputFile: paths.stylesOutputFile,
+    map: false,
   });
   minifyCss({ entryFile: paths.stylesOutputFile });
 }

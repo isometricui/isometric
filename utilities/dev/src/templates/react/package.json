@@ -1,5 +1,5 @@
 {
-  "name": "@isometric/DASHED_NAME",
+  "name": "@isometric/PACKAGE_NAME",
   "version": "0.0.1",
   "description": "Isometric UI - PRESENTATIONAL_NAME Component",
   "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
@@ -21,6 +21,7 @@
     "validate": "isometric-dev-utils validate"
   },
   "keywords": [
+    "PACKAGE_NAME",
     "DASHED_NAME",
     "component",
     "isometric",

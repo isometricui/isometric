@@ -1,5 +1,5 @@
 import * as esbuild from 'esbuild';
-import { logger } from '../../utils/logger';
+import { logger } from '../utils/logger';
 
 function buildTargets({
   targets,
@@ -16,14 +16,15 @@ function buildTargets({
   });
 }
 
-function watch({ postProcess }: { postProcess: () => void }) {
+function watch({
+  postProcess,
+  watchOptions,
+}: {
+  postProcess: () => void;
+  watchOptions: esbuild.BuildOptions;
+}) {
   const buildOptions: esbuild.BuildOptions = {
-    entryPoints: ['src/index.ts'],
-    platform: 'node',
-    bundle: true,
-    external: ['react'],
-    outfile: 'dist/index.esm.js',
-    format: 'esm',
+    ...watchOptions,
     watch: {
       onRebuild(error) {
         if (error) {
