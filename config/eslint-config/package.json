@@ -22,5 +22,8 @@
     "eslint",
     "config",
     "isometric"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "~7.26.0"
+  }
 }
