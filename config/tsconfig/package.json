@@ -1,9 +1,13 @@
 {
   "name": "@isometric/tsconfig",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Isometric TypeScript Config",
   "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
   "license": "MIT",
+  "homepage": "https://github.com/isometricui/isometric",
+  "repository": {
+    "url": "https://github.com/isometricui/isometric/tree/main/config/tsconfig"
+  },
   "main": "base.json",
   "files": [
     "*.json",

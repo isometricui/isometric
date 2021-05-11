@@ -1,0 +1,29 @@
+{
+  "name": "@isometric/tsconfig",
+  "entries": [
+    {
+      "version": "0.1.1",
+      "tag": "@isometric/tsconfig_v0.1.1",
+      "date": "Tue, 11 May 2021 14:01:47 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add LICENSE, README and CHANGELOG files"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.1.0",
+      "tag": "@isometric/tsconfig_v0.1.0",
+      "date": "Tue, 11 May 2021 12:04:26 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "TSConfig with base, react and node profiles"
+          }
+        ]
+      }
+    }
+  ]
+}
