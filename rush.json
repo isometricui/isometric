@@ -22,7 +22,8 @@
   "projects": [
     {
       "packageName": "@isometric/api-extractor-config",
-      "projectFolder": "config/api-extractor-config"
+      "projectFolder": "config/api-extractor-config",
+      "shouldPublish": true
     },
     {
       "packageName": "@isometric/eslint-config",
