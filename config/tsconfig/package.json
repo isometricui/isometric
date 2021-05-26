@@ -1,6 +1,6 @@
 {
   "name": "@isometric/tsconfig",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Isometric TypeScript Config",
   "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
   "license": "MIT",
