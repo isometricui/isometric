@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-  "rushVersion": "5.46.1",
+  "rushVersion": "5.47.0",
   "pnpmVersion": "6.3.0",
   "pnpmOptions": {
     "useWorkspaces": false,
@@ -22,7 +22,8 @@
   "projects": [
     {
       "packageName": "@isometric/api-extractor-config",
-      "projectFolder": "config/api-extractor-config"
+      "projectFolder": "config/api-extractor-config",
+      "shouldPublish": true
     },
     {
       "packageName": "@isometric/eslint-config",

@@ -1,10 +1,17 @@
 {
   "name": "@isometric/api-extractor-config",
   "version": "0.0.1",
-  "description": "Isometric API-Extractor Config",
+  "description": "Isometric API Extractor Config",
   "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
   "license": "MIT",
+  "homepage": "https://github.com/isometricui/isometric",
+  "repository": {
+    "url": "https://github.com/isometricui/isometric/tree/main/config/api-extractor-config"
+  },
   "main": "base.json",
+  "files": [
+    "*.json"
+  ],
   "scripts": {
     "build": "",
     "build:watch": "",
