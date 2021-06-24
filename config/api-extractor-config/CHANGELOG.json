@@ -1,0 +1,17 @@
+{
+  "name": "@isometric/api-extractor-config",
+  "entries": [
+    {
+      "version": "0.2.0",
+      "tag": "@isometric/api-extractor-config_v0.2.0",
+      "date": "Thu, 24 Jun 2021 13:26:46 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Bump version to 0.1.0 to prepare for 0.2.0"
+          }
+        ]
+      }
+    }
+  ]
+}
