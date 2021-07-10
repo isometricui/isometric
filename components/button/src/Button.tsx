@@ -13,7 +13,7 @@ function Button(props: ButtonProps) {
   const variants = {
     intent: props.intent && 'default',
     appearance: props.appearance && 'default',
-    size: props.size && 'normal',
+    size: props.size && 'default',
   };
 
   const variantAttributes = {
