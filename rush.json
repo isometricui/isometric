@@ -40,6 +40,10 @@
       "projectFolder": "utilities/dev"
     },
     {
+      "packageName": "@isometric/component-utils",
+      "projectFolder": "utilities/component"
+    },
+    {
       "packageName": "@isometric/button",
       "projectFolder": "components/button"
     }
