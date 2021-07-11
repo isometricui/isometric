@@ -30,10 +30,11 @@
     "react"
   ],
   "devDependencies": {
-    "@isometric/api-extractor-config": "~0.0.1",
+    "@isometric/api-extractor-config": "~0.2.0",
+    "@isometric/component-utils": "~0.0.1",
     "@isometric/dev-utils": "~0.0.1",
-    "@isometric/eslint-config": "~0.0.1",
-    "@isometric/tsconfig": "~0.1.1",
+    "@isometric/eslint-config": "~0.1.0",
+    "@isometric/tsconfig": "~0.1.2",
     "@testing-library/jest-dom": "~5.12.0",
     "@testing-library/react": "~11.2.6",
     "@types/react": "~17.0.4",
