@@ -12,6 +12,7 @@ const options = {
   bundle: true,
   watch,
   external: [
+    '@isometric/component-utils',
     '@microsoft/api-extractor',
     '@rushstack/ts-command-line',
     'autoprefixer',
