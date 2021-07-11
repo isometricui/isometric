@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { dataAttributes } from '@isometric/component-utils';
 
 export interface ButtonProps {
   label: string;
@@ -10,21 +11,14 @@ export interface ButtonProps {
 }
 
 function Button(props: ButtonProps) {
-  const variants = {
-    intent: props.intent && 'default',
-    appearance: props.appearance && 'default',
-    size: props.size && 'default',
-  };
-
-  const variantAttributes = {
-    'data-isometric-button': true,
-    'data-isometric-button-intent': variants.intent,
-    'data-isometric-button-appearance': variants.appearance,
-    'data-isometric-button-size': variants.size,
-  };
+  const variantDataAttributes = dataAttributes('button', {
+    intent: props.intent || 'default',
+    appearance: props.appearance || 'default',
+    size: props.size || 'default',
+  });
 
   const markup = (
-    <button type="button" disabled={props.disabled} {...variantAttributes}>
+    <button type="button" disabled={props.disabled} {...variantDataAttributes}>
       {props.label}
     </button>
   );

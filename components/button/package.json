@@ -31,6 +31,7 @@
   ],
   "devDependencies": {
     "@isometric/api-extractor-config": "~0.2.0",
+    "@isometric/component-utils": "~0.0.1",
     "@isometric/dev-utils": "~0.0.1",
     "@isometric/eslint-config": "~0.1.0",
     "@isometric/tsconfig": "~0.1.2",

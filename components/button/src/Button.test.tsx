@@ -18,12 +18,13 @@ test('Renders with the correct label', () => {
 
 test(`Disabled button shouldn't work`, () => {
   const buttonLabeltext = 'Test Label';
-  const { rerender, unmount } = render(
+  const { debug, rerender, unmount } = render(
     <Button label={buttonLabeltext} disabled={true} />
   );
   const button = screen.getByRole('button');
   expect(button).toBeInTheDocument();
   expect(button).toBeDisabled();
+  debug();
   unmount();
   expect(button).not.toBeInTheDocument();
 
