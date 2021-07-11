@@ -14,7 +14,7 @@ const options: esbuild.BuildOptions = {
   minifySyntax: true,
   minifyWhitespace: true,
   minifyIdentifiers: false,
-  external: ['react'],
+  external: ['react', '@isometric/component-utils'],
 };
 
 const targets: esbuild.BuildOptions[] = [
@@ -34,12 +34,15 @@ async function build() {
   generateTsDeclaration({ entry: paths.entryFile, output: 'dist/dts' });
   apiExtractor();
   fs.rmdirSync(path.resolve(paths.output, 'dts'), { recursive: true });
-  await buildCss({
-    entryFile: paths.stylesEntryFile,
-    outputFile: paths.stylesOutputFile,
-    map: false,
-  });
-  minifyCss({ entryFile: paths.stylesOutputFile });
+  const cssFileExists = fs.existsSync(paths.stylesEntryFile);
+  if (cssFileExists) {
+    await buildCss({
+      entryFile: paths.stylesEntryFile,
+      outputFile: paths.stylesOutputFile,
+      map: false,
+    });
+    minifyCss({ entryFile: paths.stylesOutputFile });
+  }
 }
 
 export { build };
