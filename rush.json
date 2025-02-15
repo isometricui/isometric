@@ -1,12 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-  "rushVersion": "5.48.0",
-  "pnpmVersion": "6.9.1",
-  "pnpmOptions": {
-    "useWorkspaces": false,
-    "strictPeerDependencies": true
-  },
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0",
+  "rushVersion": "5.148.0",
+  "pnpmVersion": "8.15.8",
+  "nodeSupportedVersionRange": ">=18.20.3 <19.0.0 || >=20.14.0 <21.0.0",
   "gitPolicy": {},
   "repository": {
     "url": "https://github.com/isometricui/isometric",
@@ -38,14 +34,6 @@
     {
       "packageName": "@isometric/dev-utils",
       "projectFolder": "utilities/dev"
-    },
-    {
-      "packageName": "@isometric/component-utils",
-      "projectFolder": "utilities/component"
-    },
-    {
-      "packageName": "@isometric/button",
-      "projectFolder": "components/button"
     }
   ]
 }

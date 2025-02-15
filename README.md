@@ -15,4 +15,4 @@ Isometric UI Components are licensed under MIT License.
 
 ---
 
-© 2021 - Isometric (Ömer Balyali <omerbalyali@gmail.com>)
+© 2025 - Isometric UI (Ömer Balyali <omerbalyali@gmail.com>)

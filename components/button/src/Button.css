@@ -1,8 +1,0 @@
-[data-isometric-button] {
-  all: unset;
-  padding-inline: var(prop(padding-inline, button));
-  padding-block: var(prop(padding-block, button));
-  color: var(prop(color, button));
-  background: var(prop(background, button));
-  border-radius: var(prop(border-radius, button));
-}
