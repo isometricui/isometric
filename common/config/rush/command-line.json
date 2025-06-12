@@ -1,46 +1,65 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
-  "commands": [
-    {
-      "name": "prettier",
-      "commandKind": "global",
-      "summary": "Used by the pre-commit Git hook. This command invokes Prettier to reformat staged changes.",
-      "safeForSimultaneousRushProcesses": true,
-      "autoinstallerName": "rush-prettier",
-      "shellCommand": "pretty-quick --staged"
-    },
-    {
-      "name": "create-new",
-      "commandKind": "global",
-      "summary": "Create a new component",
-      "safeForSimultaneousRushProcesses": true,
-      "shellCommand": "node ./utilities/dev/dist/index.js create"
-    },
-    {
-      "name": "build:watch",
-      "commandKind": "bulk",
-      "summary": "Build projects in watch mode",
-      "incremental": true,
-      "enableParallelism": true,
-      "watchForChanges": true
-    }
-  ],
+	"$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
+	"commands": [
+		{
+			"name": "format",
+			"commandKind": "global",
+			"summary": "Format all files using Prettier",
+			"description": "Formats all files in the repo using Prettier configuration",
+			"safeForSimultaneousRushProcesses": true,
+			"autoinstallerName": "rush-prettier",
+			"shellCommand": "pretty-quick --ignore-path .prettierignore"
+		},
+		{
+			"name": "format:staged",
+			"commandKind": "global",
+			"summary": "Format all files using Prettier",
+			"description": "Formats staged files in the repo using Prettier configuration",
+			"safeForSimultaneousRushProcesses": true,
+			"autoinstallerName": "rush-prettier",
+			"shellCommand": "pretty-quick --staged --ignore-path .prettierignore"
+		},
+		{
+			"name": "format:check",
+			"commandKind": "global",
+			"summary": "Check if all files are properly formatted",
+			"description": "Checks if all files in the repo are formatted according to Prettier configuration without making changes",
+			"safeForSimultaneousRushProcesses": true,
+			"autoinstallerName": "rush-prettier",
+			"shellCommand": "pretty-quick --check --ignore-path .prettierignore"
+		},
+		{
+			"name": "create-new",
+			"commandKind": "global",
+			"summary": "Create a new component",
+			"safeForSimultaneousRushProcesses": true,
+			"shellCommand": "node ./utilities/dev/dist/index.js create"
+		},
+		{
+			"name": "build:watch",
+			"commandKind": "bulk",
+			"summary": "Build projects in watch mode",
+			"incremental": true,
+			"enableParallelism": true,
+			"watchForChanges": true
+		}
+	],
 
-  "parameters": [
-    {
-      "argumentName": "NAME",
-      "longName": "--name",
-      "shortName": "-n",
-      "description": "Component name",
-      "parameterKind": "string",
-      "associatedCommands": ["create-new"],
-      "required": true
-    },
-    {
-      "longName": "--run",
-      "description": "Create the component permanently",
-      "parameterKind": "flag",
-      "associatedCommands": ["create-new"]
-    }
-  ]
+	"parameters": [
+		{
+			"argumentName": "NAME",
+			"longName": "--name",
+			"shortName": "-n",
+			"description": "Component name",
+			"parameterKind": "string",
+			"associatedCommands": ["create-new"],
+			"required": true
+		},
+		{
+			"longName": "--run",
+			"description": "Create the component permanently",
+			"parameterKind": "flag",
+			"associatedCommands": ["create-new"]
+		}
+	]
 }
