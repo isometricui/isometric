@@ -1,29 +1,29 @@
 {
-  "name": "@isometric/eslint-config",
-  "version": "0.1.0",
-  "description": "Isometric ESLint Config",
-  "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
-  "license": "MIT",
-  "homepage": "https://github.com/isometricui/isometric",
-  "repository": {
-    "url": "https://github.com/isometricui/isometric/tree/main/config/eslint-config"
-  },
-  "main": "index.js",
-  "files": [
-    "*.js",
-    "types"
-  ],
-  "scripts": {
-    "build": "",
-    "build:watch": "",
-    "test": ""
-  },
-  "keywords": [
-    "eslint",
-    "config",
-    "isometric"
-  ],
-  "devDependencies": {
-    "eslint": "~7.26.0"
-  }
+	"name": "@isometric/eslint-config",
+	"version": "0.1.0",
+	"description": "Isometric ESLint Config",
+	"keywords": [
+		"eslint",
+		"config",
+		"isometric"
+	],
+	"homepage": "https://github.com/isometricui/isometric",
+	"repository": {
+		"url": "https://github.com/isometricui/isometric/tree/main/config/eslint-config"
+	},
+	"license": "MIT",
+	"author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
+	"main": "index.js",
+	"files": [
+		"*.js",
+		"types"
+	],
+	"scripts": {
+		"build": "",
+		"build:watch": "",
+		"test": ""
+	},
+	"devDependencies": {
+		"eslint": "~7.26.0"
+	}
 }

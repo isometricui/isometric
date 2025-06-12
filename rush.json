@@ -1,39 +1,48 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-  "rushVersion": "5.148.0",
-  "pnpmVersion": "8.15.8",
-  "nodeSupportedVersionRange": ">=18.20.3 <19.0.0 || >=20.14.0 <21.0.0",
-  "gitPolicy": {},
-  "repository": {
-    "url": "https://github.com/isometricui/isometric",
-    "defaultBranch": "main"
-  },
-  "eventHooks": {
-    "preRushInstall": [],
-    "postRushInstall": [],
-    "preRushBuild": [],
-    "postRushBuild": []
-  },
-  "variants": [],
-  "projects": [
-    {
-      "packageName": "@isometric/api-extractor-config",
-      "projectFolder": "config/api-extractor-config",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@isometric/eslint-config",
-      "projectFolder": "config/eslint-config",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@isometric/tsconfig",
-      "projectFolder": "config/tsconfig",
-      "shouldPublish": true
-    },
-    {
-      "packageName": "@isometric/dev-utils",
-      "projectFolder": "utilities/dev"
-    }
-  ]
+	"$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+	"rushVersion": "5.153.2",
+	"pnpmVersion": "10.12.0",
+	"nodeSupportedVersionRange": ">=20.14.0 <21.0.0 || >=22.0.0 <23.0.0",
+	"ensureConsistentVersions": true,
+	"projectFolderMaxDepth": 2,
+	"projectFolderMinDepth": 2,
+	"gitPolicy": {
+		"versionBumpCommitMessage": "[repo] Bump versions [skip ci]",
+		"changeLogUpdateCommitMessage": "[repo] Update changelogs [skip ci]",
+		"changefilesCommitMessage": "[repo] Rush change"
+	},
+	"repository": {
+		"url": "https://github.com/isometricui/isometric",
+		"defaultBranch": "main"
+	},
+	"eventHooks": {
+		"preRushInstall": [],
+		"postRushInstall": [],
+		"preRushBuild": [],
+		"postRushBuild": [],
+		"preRushx": [],
+		"postRushx": []
+	},
+	"variants": [],
+	"projects": [
+		{
+			"packageName": "@isometric/api-extractor-config",
+			"projectFolder": "config/api-extractor-config",
+			"shouldPublish": true
+		},
+		{
+			"packageName": "@isometric/eslint-config",
+			"projectFolder": "config/eslint-config",
+			"shouldPublish": true
+		},
+		{
+			"packageName": "@isometric/tsconfig",
+			"projectFolder": "config/tsconfig",
+			"shouldPublish": true
+		},
+		{
+			"packageName": "@isometric/dev-utils",
+			"projectFolder": "utilities/dev"
+		}
+	]
 }

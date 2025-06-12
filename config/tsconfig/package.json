@@ -1,27 +1,27 @@
 {
-  "name": "@isometric/tsconfig",
-  "version": "0.1.2",
-  "description": "Isometric TypeScript Config",
-  "author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
-  "license": "MIT",
-  "homepage": "https://github.com/isometricui/isometric",
-  "repository": {
-    "url": "https://github.com/isometricui/isometric/tree/main/config/tsconfig"
-  },
-  "main": "base.json",
-  "files": [
-    "*.json",
-    "types"
-  ],
-  "scripts": {
-    "build": "",
-    "test": "",
-    "build:watch": ""
-  },
-  "keywords": [
-    "tsconfig",
-    "typescript",
-    "config",
-    "isometric"
-  ]
+	"name": "@isometric/tsconfig",
+	"version": "0.1.2",
+	"description": "Isometric TypeScript Config",
+	"keywords": [
+		"tsconfig",
+		"typescript",
+		"config",
+		"isometric"
+	],
+	"homepage": "https://github.com/isometricui/isometric",
+	"repository": {
+		"url": "https://github.com/isometricui/isometric/tree/main/config/tsconfig"
+	},
+	"license": "MIT",
+	"author": "Ömer Balyali <omerbalyali@gmail.com> (http://www.omerbalyali.com/)",
+	"main": "base.json",
+	"files": [
+		"*.json",
+		"types"
+	],
+	"scripts": {
+		"build": "",
+		"build:watch": "",
+		"test": ""
+	}
 }
